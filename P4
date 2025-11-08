@@ -1,0 +1,24 @@
+package Pattern;
+import java.util.*;
+import java.lang.*;
+public class P4 {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        System.out.print("Give the no. of test cases you want in the output: ");
+        int t=in.nextInt();
+        for (int i = 0; i <t; i++) {
+            System.out.print("Enter the number of rows to print: ");
+            int n=in.nextInt();
+            p4(n);
+        }
+    }
+    static void p4(int n){
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print(i+1 +" ");
+            }
+            System.out.println();
+        }
+    }
+
+}
